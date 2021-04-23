@@ -1,4 +1,26 @@
-alert('Hello World');
+let pokemonList = [
+    {
+    name: 'Charmander',
+    height: 3,
+    types: ['monster', 'dragon']
+},
 
-let favFood ='Pizza';
-document.write(favFood);
+{
+    name: 'Pikachu',
+    height: 2,
+    types: ['field', 'fairy']
+},
+
+{
+    name: 'Squirtle',
+    height: 3,
+    types: ['monster', 'water1']
+}
+]
+
+
+
+
+
+
+
