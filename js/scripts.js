@@ -1,22 +1,38 @@
-let pokemonList = [
-    {
-        name: 'Charmander',
-        height: 4,
-        types: ['monster', 'dragon']
-    },
 
-    {
-        name: 'Pikachu',
-        height: 2,
-        types: ['field', 'fairy']
-    },
+let pokemonRepository = (function () {
+    let pokemonList = [
+        {
+            name: 'Charmander',
+            height: 4,
+            types: ['monster', 'dragon']
+        },
 
-    {
-        name: 'Squirtle',
-        height: 3,
-        types: ['monster', 'water1']
+        {
+            name: 'Pikachu',
+            height: 2,
+            types: ['field', 'fairy']
+        },
+
+        {
+            name: 'Squirtle',
+            height: 3,
+            types: ['monster', 'water1']
+        }
+    ];
+
+    function add(pokemon) {
+        pokemonList.push(pokemon);
     }
-]
+
+    function getAll() {
+        return pokemonList;
+    }
+
+    return {
+        add: add,
+        getAll: getAll
+    };
+})();
 
 /* for (let i = 0; i < pokemonList.length; i++) {
     if (pokemonList[i].height > 3) {
@@ -27,10 +43,6 @@ let pokemonList = [
     }
 } */
 
-pokemonList.forEach(function(pokemon) {
+pokemonRepository.getAll().forEach(function (pokemon) {
     document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.' + '<br>');
-  });
-
-
-
-
+});
