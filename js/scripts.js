@@ -27,13 +27,22 @@ let pokemonRepository = (function () {
     function getAll() {
         return pokemonList;
     }
-
+    function addListItem(pokemon) {
+        let pokemonList = document.querySelector('.pokemon-list');
+        let listItem = document.createElement('li');
+        let button = document.createElement('button');
+        button.innerText = pokemon.name;
+        button.classList.add('button-class');
+        listItem.appendChild(button);
+        pokemonList.appendChild(listItem)
+    }
     return {
         add: add,
-        getAll: getAll
+        getAll: getAll,
+        addListItem: addListItem
     };
 })();
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-    document.write(pokemon.name + ' is ' + pokemon.height + ' feet tall.' + '<br>');
+    pokemonRepository.addListItem(pokemon); 
 });
