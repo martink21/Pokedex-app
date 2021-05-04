@@ -23,15 +23,16 @@ let pokemonRepository = (function () {
         });
     }
 
-        function showLoadingMessage(){
-              document.querySelector(
-                "#loader").style.visibility = "visible";
-        };
+    function showLoadingMessage() {
+        document.querySelector(
+            '#loader').style.visibility = 'visible';
 
-        function hideLoadinMessage(){
-            document.querySelector(
-                "#loader").style.display = "none";
-        };
+    };
+
+    function hideLoadinMessage() {
+        document.querySelector(
+            '#loader').style.display = 'none';
+    };
 
     function loadList() {
         showLoadingMessage();
@@ -56,25 +57,25 @@ let pokemonRepository = (function () {
         showLoadingMessage();
         let url = item.detailsUrl;
         return fetch(url).then(function (response) {
-          return response.json();
+            return response.json();
         }).then(function (details) {
             hideLoadinMessage();
-          // Now we add the details to the item
-          item.imageUrl = details.sprites.front_default;
-          item.height = details.height;
-          item.types = details.types;
+            // Now we add the details to the item
+            item.imageUrl = details.sprites.front_default;
+            item.height = details.height;
+            item.types = details.types;
         }).catch(function (e) {
             hideLoadinMessage();
-          console.error(e);
+            console.error(e);
         });
-      
+
     }
-    
+
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function () {
-          console.log(pokemon);
+            console.log(pokemon);
         });
-      }
+    }
 
     return {
         add: add,
@@ -85,7 +86,7 @@ let pokemonRepository = (function () {
     };
 })();
 
-    pokemonRepository.loadList().then(function () {
+pokemonRepository.loadList().then(function () {
     // Now the data is loaded!
     pokemonRepository.getAll().forEach(function (pokemon) {
         pokemonRepository.addListItem(pokemon);
