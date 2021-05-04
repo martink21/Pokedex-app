@@ -1,4 +1,4 @@
-.button-class{
+.button-class {
     width: 150px;
     background-color: yellow;
     border-width: 2px;
@@ -11,15 +11,46 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-   -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
     background-color: white;
     color: black;
     border: 2px solid #4caf50;
-
 }
 
 .pokemon-list {
     list-style: none;
-} 
+}
+
+#loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#loading-message {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
