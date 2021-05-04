@@ -1,3 +1,7 @@
+.pokemon-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
 .button-class {
     width: 150px;
     background-color: yellow;
@@ -11,13 +15,14 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
+}
+
+.button-class:focus {
     transition-duration: 0.4s;
     cursor: pointer;
     background-color: white;
     color: black;
-    border: 2px solid #4caf50;
+    border: 2px solid red;
 }
 
 .pokemon-list {
@@ -48,9 +53,15 @@
     margin: auto;
 }
 
-#loading-message {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.logo, .search-bar {
+    display: inline-block;
+}
 
+.search-bar {
+    float: right;
+    margin-top: 51px;
+}
+
+#search-bar {
+    border-color: red;
 }
