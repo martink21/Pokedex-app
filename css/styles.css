@@ -63,25 +63,6 @@
     margin-top: 51px;
 }
 
-#search-bar {
-    border-color: red;
-}
-
-.search-button {
-    border: 2px solid red;
-    background-color: white;
-    color: black;
-    font-weight: 600;
-}
-
-.search-button:hover{
-    border: 2px solid black;
-    background-color: yellow;
-    color: red;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    }
-
 html, body {
     font-family: Arial, sans-serif;
 }
@@ -116,7 +97,8 @@ html, body {
 }
 
 .modal-close {
-    float: right;
+    display:block;
+    margin: 0 10px 30px auto;
     -webkit-appearance: none;
     border: 1px, black;
     padding: 3px 9px;
@@ -148,4 +130,9 @@ html, body {
 
 h1, p {
     text-align: center;
+}
+
+.pokemon-image{
+    display:block;
+    margin: 0 auto;   
 }
