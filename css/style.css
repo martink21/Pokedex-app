@@ -1,29 +1,56 @@
-.pokemon-list {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color:#ff0808;
 }
 
-.btn-primary {
-    width: 150px;
-    background-color: yellow;
-    border-width: 2px;
+.wrapper{
+    margin: 30px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+.navbar-toggler{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pokemon-list{
+    display:flex;
+    flex-wrap: wrap;
+    padding:0;
+    row-gap: 5px;
+    column-gap: 3px;
+}
+
+li{
+    margin:auto;
+}
+
+.btn-primary, .btn-secondary{
+    width: 130px;
+    background-color: #ff0808;
+    border-width: 1px;
     border-color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: red;
-    padding: 16px 32px;
+    font-family: inherit;
+    color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     margin: 4px 2px;
-}
+    font-weight: 600;
+    }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-secondary:hover{
     transition-duration: 0.4s;
     cursor: pointer;
     background-color: white;
     color: black;
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
 .pokemon-list {
@@ -55,7 +82,7 @@
 }
 
 .navbar{
-    background-color: white;
+    margin: 10px 60px 0;
 }
 
 .navbar-brand{
@@ -69,42 +96,31 @@
 
 .nav-link{
     margin-left: 15px;
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 5px;
+    color: black !important;
     font-size: large;
+    font-weight: 800;
+    font-family: "ＭＳ Ｐゴシック";
 }
 
 .nav-link:hover{
-    transition-duration: 4ms;
-    color: red;
+    transition-duration: 300ms;
+    color: white !important;
 }
 
 .search-bar {
-    margin: 20px auto 40px;
-    max-width: 500px;
+    margin-top: 15px;
+    margin-left: 10px;   
 }
 
-html, body {
-    font-family: Arial, sans-serif;
+.modal-content{
+  text-align: center;
 }
 
-
-.modal {
-    margin: auto;
-    display: inline-block;
-    box-sizing: border-box;
-    background: #fff;
-    padding: 15px;
-    width: 100%;
-    max-width: 700px;
-    text-align: left;
+.modal-header{
+    justify-content: center;
 }
 
-.modal{
-    display:none;
-}
-
-.modal-dialog.is-visible {
-    /* CSS for modal container - add your own desired CSS styles here */
-    display: block;
+footer p{
+    text-align: center;
 }
