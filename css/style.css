@@ -123,4 +123,59 @@ li{
 
 footer p{
     text-align: center;
+    padding-bottom: 10px;
+}
+
+.container-contact2{
+    background: #ff0808;
+}
+
+.contact2-form-btn{
+    background-color: #ff0808;
+}
+
+@media all and (max-width: 718px) {
+
+    .navbar {
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .search-bar{
+        max-width:200px;
+        margin: 30px auto;
+    }
+
+    .navbar-toggler{
+        margin-top: 10px;
+    }
+
+}
+
+@media all and (max-width: 215px) {
+    .btn-primary{
+        width: 90px;
+        font-size: 10px;
+    }
+    .wrapper{
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 350px) {
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 220px) {
+    h1{
+        font-size: 15px;
+    }
+}
+
+.container-contact2{
+    width: 70%;
+    margin: 30px auto;
 }
