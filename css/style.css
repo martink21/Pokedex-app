@@ -150,6 +150,10 @@ footer p{
     .navbar-toggler{
         margin-top: 10px;
     }
+    
+    .nav-link{
+       margin: 3px auto;
+    }
 
 }
 
