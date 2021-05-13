@@ -134,6 +134,11 @@ footer p{
     background-color: #ff0808;
 }
 
+.card{
+    margin: 50px auto;
+    text-align: center;
+}
+
 @media all and (max-width: 718px) {
 
     .navbar {
@@ -202,3 +207,18 @@ footer p{
         font-size: 18px;
     }
 }
+
+@media all and (max-width: 360px) {
+    .card{
+        max-width: 250px;
+    }
+}
+
+@media all and (max-width: 280px) {
+    .card{
+        max-width: 180px;
+    }
+}
+
+
+
