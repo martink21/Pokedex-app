@@ -183,3 +183,22 @@ footer p{
     width: 70%;
     margin: 30px auto;
 }
+
+@media all and (max-width: 460px) {
+    .contact2-form-btn{
+        font-size:12px;
+        min-width: 10px;
+    }
+    .contact2-form-title{
+        font-size: 26px;
+    }
+}
+@media all and (max-width: 265px) {
+    .contact2-form-btn{
+        font-size:10px;
+        
+    }
+    .contact2-form-title{
+        font-size: 18px;
+    }
+}
