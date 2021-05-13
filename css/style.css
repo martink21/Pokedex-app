@@ -1,12 +1,12 @@
 * {
     box-sizing: border-box;
-  }
-
-body{
-    background-color:#ff0808;
 }
 
-.wrapper{
+body {
+    background-color: #ff0808;
+}
+
+.wrapper {
     margin: 30px;
     background-color: white;
     padding: 50px;
@@ -14,20 +14,19 @@ body{
     border: 3px solid black;
 }
 
-
-.pokemon-list{
-    display:flex;
+.pokemon-list {
+    display: flex;
     flex-wrap: wrap;
-    padding:0;
+    padding: 0;
     row-gap: 5px;
     column-gap: 3px;
 }
 
-li{
-    margin:auto;
+li {
+    margin: auto;
 }
 
-.btn-primary, .btn-secondary{
+.btn-primary, .btn-secondary {
     width: 130px;
     background-color: #ff0808;
     border-width: 1px;
@@ -39,9 +38,9 @@ li{
     font-size: 12px;
     margin: 4px 2px;
     font-weight: 600;
-    }
+}
 
-.btn-primary:hover, .btn-secondary:hover{
+.btn-primary:hover, .btn-secondary:hover {
     transition-duration: 0.4s;
     cursor: pointer;
     background-color: white;
@@ -77,23 +76,27 @@ li{
     margin: auto;
 }
 
-.navbar{
+.navbar {
     margin: 10px 60px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.navbar-brand{
-    margin-top:5px;
-    margin-left:5px;
+#navbarNav {
+    justify-content: flex-end;
+    max-width: 250px;
 }
 
-.collapse{
-    max-width: fit-content;
-    
+.navbar-brand {
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
-.nav-link{
+.navbar {
+    justify-content: space-between;
+}
+
+.nav-link {
     margin-left: 15px;
     margin-top: 5px;
     color: black !important;
@@ -102,7 +105,7 @@ li{
     font-family: "ＭＳ Ｐゴシック";
 }
 
-.nav-link:hover{
+.nav-link:hover {
     transition-duration: 300ms;
     color: white !important;
 }
@@ -111,118 +114,136 @@ li{
     margin: 0 auto;
 }
 
-.modal-content{
-  text-align: center;
+.modal-content {
+    text-align: center;
 }
 
-.modal-header{
+.modal-header {
     justify-content: center;
 }
 
-footer p{
+footer p {
     text-align: center;
     padding-bottom: 10px;
 }
 
-.container-contact2{
+.container-contact2 {
     background: #ff0808;
 }
 
-.contact2-form-btn{
+.contact2-form-btn {
     background-color: #ff0808;
 }
 
-.card{
+.card {
     margin: 50px auto;
     text-align: center;
 }
 
-@media all and (max-width: 718px) {
-
+@media all and (max-width: 919px) {
     .navbar {
-        margin:0 auto;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        
     }
-    .search-bar{
-        max-width:200px;
+    .search-bar {
+        max-width: 200px;
         margin: 30px auto;
     }
-
-    .navbar-toggler{
+    .navbar-toggler {
         margin-top: 10px;
     }
-    
-    .nav-link{
-       margin: 3px auto;
+    .nav-link {
+        margin: 3px auto;
     }
-
 }
 
 @media all and (max-width: 215px) {
-    .btn-primary{
+    .btn-primary {
         width: 90px;
         font-size: 10px;
     }
-    .wrapper{
+    .wrapper {
         margin: auto;
     }
 }
 
 @media all and (max-width: 350px) {
-    h1{
+    h1 {
         font-size: 20px;
     }
 }
 
 @media all and (max-width: 220px) {
-    h1{
+    h1 {
         font-size: 15px;
     }
 }
 
-.container-contact2{
+.container-contact2 {
     width: 70%;
     margin: 30px auto;
 }
 
 @media all and (max-width: 460px) {
-    .contact2-form-btn{
-        font-size:12px;
+    .contact2-form-btn {
+        font-size: 12px;
         min-width: 10px;
     }
-    .contact2-form-title{
+    .contact2-form-title {
         font-size: 26px;
     }
 }
+
 @media all and (max-width: 265px) {
-    .contact2-form-btn{
-        font-size:10px;
-        
+    .contact2-form-btn {
+        font-size: 10px;
     }
-    .contact2-form-title{
+    .contact2-form-title {
         font-size: 18px;
     }
 }
 
 @media all and (max-width: 360px) {
-    .card{
+    .card {
         max-width: 250px;
     }
 }
 
 @media all and (max-width: 280px) {
-    .card{
+    .card {
         max-width: 180px;
     }
 }
 
-@media all and (min-width: 719px) and (max-width: 991px) {
-    .navbar-toggler{
-        margin-right: 0;
+
+@media all and (min-width: 719px) and (max-width: 741px) {
+    .show{
+        margin: 10px auto;
     }
 }
 
+@media all and (min-width: 742px) and (max-width: 991px) {
+    .navbar-nav{
+        
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .navbar{
+        flex-wrap: nowrap;
+    } 
 
+    .search-bar{
+        margin-left: 10px;
+        margin-right: 10px; 
+    } 
+}
 
+@media all and (max-width: 919px){
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+}
