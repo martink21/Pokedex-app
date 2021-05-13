@@ -14,10 +14,6 @@ body{
     border: 3px solid black;
 }
 
-.navbar-toggler{
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .pokemon-list{
     display:flex;
@@ -83,6 +79,8 @@ li{
 
 .navbar{
     margin: 10px 60px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar-brand{
@@ -91,7 +89,8 @@ li{
 }
 
 .collapse{
-    margin-top:7px;
+    max-width: fit-content;
+    
 }
 
 .nav-link{
@@ -109,8 +108,7 @@ li{
 }
 
 .search-bar {
-    margin-top: 15px;
-    margin-left: 10px;   
+    margin: 0 auto;
 }
 
 .modal-content{
@@ -217,6 +215,12 @@ footer p{
 @media all and (max-width: 280px) {
     .card{
         max-width: 180px;
+    }
+}
+
+@media all and (min-width: 719px) and (max-width: 991px) {
+    .navbar-toggler{
+        margin-right: 0;
     }
 }
 
