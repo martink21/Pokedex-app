@@ -1,7 +1,7 @@
 let pokemonRepository = (function () {
    
     let pokemonList = [];
-    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+    let API_URL = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
     let modalContainer = document.querySelector('.modal');
 
 
@@ -42,7 +42,7 @@ let pokemonRepository = (function () {
 
     function loadList() {
         showLoadingMessage();
-        return fetch(apiUrl).then(function (response) {
+        return fetch(API_URL).then(function (response) {
             return response.json();
         }).then(function (json) {
             hideLoadingMessage();
