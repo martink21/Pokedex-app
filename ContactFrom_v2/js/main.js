@@ -1,13 +1,13 @@
 
 (function ($) {
-    "use strict";
+    'use strict';
 
 
     /*==================================================================
     [ Focus Contact2 ]*/
     $('.input2').each(function(){
         $(this).on('blur', function(){
-            if($(this).val().trim() != "") {
+            if($(this).val().trim() != '') {
                 $(this).addClass('has-val');
             }
             else {
