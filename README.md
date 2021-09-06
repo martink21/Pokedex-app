@@ -5,7 +5,7 @@
 This is a simple js app that displays the names of some Pokemon listed as objects in an array.
 
 ### Screenshots
-![]()
+![](https://snipboard.io/O17SW4.jpg)
  
 ### Key Features
 - Load data from an external source (API)
